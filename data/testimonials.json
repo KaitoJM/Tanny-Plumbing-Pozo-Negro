@@ -1,0 +1,30 @@
+[
+  {
+    "initial": "M",
+    "name": "Marcelo",
+    "color": "#1535cc",
+    "rating": 5,
+    "text": "Very professional and fast service. Highly recommended!"
+  },
+  {
+    "initial": "B",
+    "name": "Brigge Pedrana",
+    "color": "#cc0000",
+    "rating": 5,
+    "text": "Great work at a very affordable price. Will call again!"
+  },
+  {
+    "initial": "J",
+    "name": "John Rey Pacampara",
+    "color": "#22c55e",
+    "rating": 5,
+    "text": "They arrived on time and resolved the issue quickly."
+  },
+  {
+    "initial": "R",
+    "name": "Renaldo",
+    "color": "#7c3aed",
+    "rating": 5,
+    "text": "Sulit na sulit! Mabilis at maayos ang trabaho."
+  }
+]

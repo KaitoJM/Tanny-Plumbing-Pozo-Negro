@@ -1,0 +1,21 @@
+{
+  "name": "Tanny Plumbing",
+  "tagline": "Pozo Negro Services",
+  "email": "admin@tannyplumbing.com",
+  "phones": [
+    "0915-045-4944",
+    "0917-408-0609"
+  ],
+  "address": "1856 Champaca St., Area-D Camarin, Caloocan City",
+  "hours": "24 Hour Service – 7 Days a Week",
+  "facebook": "https://facebook.com",
+  "hero": {
+    "headline": "Looking For\nSipsip Pozo Negro\nPrice List?",
+    "subtext": "We Have The Lowest Pricing List For Siphoning Services. We Have 50% Off To All The Services – Limited Time Only. Don't Miss A Chance! Call Us Now.",
+    "countdownHours": 24
+  },
+  "footer": {
+    "about": "Our team provides friendly, affordable, and effective restoration plumbing, siphoning and declogging services.",
+    "serviceAreas": ["Caloocan", "Laguna", "Batangas", "Rizal", "Quezon Province"]
+  }
+}
