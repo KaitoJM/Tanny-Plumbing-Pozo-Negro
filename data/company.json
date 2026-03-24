@@ -4,10 +4,7 @@
   "siteUrl": "https://tannyplumbing.com",
   "seoDescription": "Tanny Plumbing offers affordable siphoning, septic tank cleaning, declogging, and all plumbing services in Caloocan and nearby areas. Call us 24/7.",
   "email": "admin@tannyplumbing.com",
-  "phones": [
-    "0915-045-4944",
-    "0917-408-0609"
-  ],
+  "phones": ["0917-408-0609"],
   "address": "1856 Champaca St., Area-D Camarin, Caloocan City",
   "hours": "24 Hour Service – 7 Days a Week",
   "facebook": "https://facebook.com",
@@ -18,6 +15,12 @@
   },
   "footer": {
     "about": "Our team provides friendly, affordable, and effective restoration plumbing, siphoning and declogging services.",
-    "serviceAreas": ["Caloocan", "Laguna", "Batangas", "Rizal", "Quezon Province"]
+    "serviceAreas": [
+      "Caloocan",
+      "Laguna",
+      "Batangas",
+      "Rizal",
+      "Quezon Province"
+    ]
   }
 }
