@@ -5,8 +5,12 @@
       <div class="max-w-400 mx-auto px-4 md:px-10 py-8 md:py-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
         <div class="text-center text-white">
           <MapPin :size="28" class="mx-auto mb-2 text-blue-300" />
-          <h4 class="text-sm font-bold mb-1.5">Head Office</h4>
-          <p class="text-xs text-blue-300 leading-relaxed">{{ company.name }}<br />{{ company.address }}</p>
+          <h4 class="text-sm font-bold mb-1.5">Our Branches</h4>
+          <div class="space-y-2">
+            <p v-for="branch in company.branches" :key="branch.name" class="text-xs text-blue-300 leading-relaxed">
+              <span class="text-white font-semibold">{{ branch.name }}</span><br />{{ branch.address }}
+            </p>
+          </div>
         </div>
         <div class="text-center text-white">
           <Phone :size="28" class="mx-auto mb-2 text-blue-300" />

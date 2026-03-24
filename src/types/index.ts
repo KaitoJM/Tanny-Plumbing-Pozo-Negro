@@ -5,7 +5,7 @@ export interface Company {
   seoDescription: string
   email: string
   phones: string[]
-  address: string
+  branches: { name: string; address: string }[]
   hours: string
   facebook: string
   hero: {

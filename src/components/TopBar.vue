@@ -3,7 +3,7 @@
     <div class="max-w-400 mx-auto px-4 md:px-5 flex justify-between items-center gap-1.5">
       <div class="flex items-center flex-wrap gap-x-4 gap-y-1">
         <span class="flex items-center gap-1.5"><Mail :size="12" /> {{ company.email }}</span>
-        <span class="hidden md:flex items-center gap-1.5"><MapPin :size="12" /> {{ company.address }}</span>
+        <span class="hidden md:flex items-center gap-1.5"><MapPin :size="12" /> {{ company.branches.map(b => b.name.replace(' Branch', '')).join(' & ') }}</span>
         <span class="hidden lg:flex items-center gap-1.5"><Clock :size="12" /> {{ company.hours }}</span>
       </div>
       <a :href="company.facebook" target="_blank" class="flex items-center gap-1.5 text-[#cde] no-underline shrink-0">
