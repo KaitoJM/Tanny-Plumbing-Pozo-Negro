@@ -1,6 +1,8 @@
 export interface Company {
   name: string
   tagline: string
+  siteUrl: string
+  seoDescription: string
   email: string
   phones: string[]
   address: string
