@@ -2,13 +2,13 @@
   <div>
     <!-- FOOTER TOP -->
     <div class="bg-[#1230b0] border-t border-[#2545c8]">
-      <div class="max-w-400 mx-auto px-10 py-10 flex gap-7 justify-center flex-wrap">
-        <div class="text-center min-w-44 text-white">
+      <div class="max-w-400 mx-auto px-4 md:px-10 py-8 md:py-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="text-center text-white">
           <MapPin :size="28" class="mx-auto mb-2 text-blue-300" />
           <h4 class="text-sm font-bold mb-1.5">Head Office</h4>
           <p class="text-xs text-blue-300 leading-relaxed">{{ company.name }}<br />{{ company.address }}</p>
         </div>
-        <div class="text-center min-w-44 text-white">
+        <div class="text-center text-white">
           <Phone :size="28" class="mx-auto mb-2 text-blue-300" />
           <h4 class="text-sm font-bold mb-1.5">Phone Numbers</h4>
           <p class="text-xs text-blue-300 leading-relaxed">
@@ -17,7 +17,7 @@
             </span>
           </p>
         </div>
-        <div class="text-center min-w-44 text-white">
+        <div class="text-center text-white">
           <Clock :size="28" class="mx-auto mb-2 text-blue-300" />
           <h4 class="text-sm font-bold mb-1.5">Working Time</h4>
           <p class="text-xs text-blue-300 leading-relaxed">{{ company.hours }}<br />365 Days</p>
@@ -27,9 +27,10 @@
 
     <!-- FOOTER BOTTOM -->
     <footer class="bg-[#0c1d8a]">
-      <div class="max-w-400 mx-auto px-10 pt-10 pb-5 text-blue-200">
-        <div class="flex gap-10 flex-wrap justify-between mb-7">
-          <div class="max-w-52">
+      <div class="max-w-400 mx-auto px-4 md:px-10 pt-8 md:pt-10 pb-5 text-blue-200">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-7">
+          <!-- Brand -->
+          <div>
             <img
               src="/assets/tanny-logo.png"
               :alt="company.name"
@@ -37,12 +38,14 @@
             />
             <p class="text-xs text-blue-300 leading-relaxed">{{ company.footer.about }}</p>
           </div>
+          <!-- Services -->
           <div>
             <h4 class="text-sm font-bold text-white mb-3.5">Our Services</h4>
             <ul class="list-none p-0 space-y-0.5">
               <li v-for="s in servicesStore.services" :key="s.name" class="text-xs text-blue-300">{{ s.name }}</li>
             </ul>
           </div>
+          <!-- Areas -->
           <div>
             <h4 class="text-sm font-bold text-white mb-3.5">Service Areas</h4>
             <ul class="list-none p-0 space-y-0.5">

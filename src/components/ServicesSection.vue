@@ -1,12 +1,12 @@
 <template>
   <section id="services" class="bg-white">
-    <div class="max-w-300 mx-auto px-10 py-16 text-center">
+    <div class="max-w-300 mx-auto px-4 md:px-10 py-10 md:py-16 text-center">
       <p class="text-xs font-bold tracking-widest uppercase text-brand-red mb-2">Choose a Service</p>
-      <h2 class="text-3xl font-extrabold text-brand-blue mb-10">The Lowest Pricing In Your Area</h2>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-brand-blue mb-8 md:mb-10">The Lowest Pricing In Your Area</h2>
 
-      <div class="grid grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         <div v-for="service in servicesStore.services" :key="service.name"
-             class="bg-white border border-gray-200 rounded-xl p-6 text-left shadow-sm hover:shadow-md transition-shadow">
+             class="bg-white border border-gray-200 rounded-xl p-5 md:p-6 text-left shadow-sm hover:shadow-md transition-shadow">
           <h3 class="text-base font-bold text-brand-blue mb-1.5 leading-snug">{{ service.name }}</h3>
           <p class="text-sm text-gray-400 line-through mb-0.5">{{ service.priceOld }}</p>
           <p class="text-2xl font-extrabold text-brand-blue mb-3.5">{{ service.priceNew }}</p>

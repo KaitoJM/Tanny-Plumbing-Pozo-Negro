@@ -1,30 +1,33 @@
 <template>
   <section class="bg-blue-50">
-    <div class="max-w-300 mx-auto px-10 py-16 flex items-center justify-between gap-10 flex-wrap">
-      <div class="flex-1 min-w-70 max-w-xl">
-        <h1 class="text-4xl font-extrabold text-brand-blue leading-tight mb-4 whitespace-pre-line">
+    <div class="max-w-300 mx-auto px-4 md:px-10 py-10 md:py-16 flex flex-col lg:flex-row items-center gap-8 lg:gap-10">
+      <!-- Text -->
+      <div class="w-full lg:flex-1 lg:max-w-xl">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-brand-blue leading-tight mb-4 whitespace-pre-line">
           {{ company.hero.headline }}
         </h1>
         <p class="text-sm text-gray-500 mb-6 leading-relaxed">
           {{ company.hero.subtext }}
         </p>
         <a :href="'tel:' + company.phones[0].replace(/-/g, '')"
-           class="inline-flex items-center gap-2 bg-brand-red text-white px-7 py-3 rounded font-bold text-sm no-underline mb-7">
+           class="inline-flex items-center gap-2 bg-brand-red text-white px-6 md:px-7 py-3 rounded font-bold text-sm no-underline mb-7">
           <Phone :size="15" /> {{ company.phones[0] }}
         </a>
-        <div class="flex gap-2.5 mt-2.5">
+        <!-- Countdown -->
+        <div class="flex gap-2 md:gap-2.5 mt-2.5">
           <div v-for="unit in countdown" :key="unit.label"
-               class="bg-brand-blue text-white text-center px-4 py-2.5 rounded-md min-w-16">
-            <span class="text-2xl font-extrabold block">{{ unit.value }}</span>
+               class="bg-brand-blue text-white text-center px-3 md:px-4 py-2.5 rounded-md flex-1 md:flex-none md:min-w-16">
+            <span class="text-xl md:text-2xl font-extrabold block">{{ unit.value }}</span>
             <span class="text-[10px] uppercase tracking-widest">{{ unit.label }}</span>
           </div>
         </div>
       </div>
-      <div class="flex-1 min-w-65 max-w-md rounded-xl overflow-hidden">
+      <!-- Image -->
+      <div class="w-full lg:flex-1 lg:max-w-md rounded-xl overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80"
           alt="Plumbing technician working"
-          class="w-full h-85 object-cover rounded-xl block"
+          class="w-full h-56 md:h-72 lg:h-85 object-cover rounded-xl block"
         />
       </div>
     </div>
