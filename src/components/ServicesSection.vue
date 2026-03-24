@@ -20,7 +20,7 @@
           :key="service.name"
           class="bg-white border border-gray-200 rounded-xl p-5 md:p-6 text-left shadow-sm hover:shadow-md transition-shadow"
         >
-          <h3 class="text-base font-bold text-brand-blue mb-1.5 leading-snug">
+          <h3 class="text-lg font-bold text-brand-blue mb-1.5 leading-snug">
             {{ service.name }}
           </h3>
           <!-- <p class="text-sm text-gray-400 line-through mb-0.5">{{ service.priceOld }}</p>
@@ -29,17 +29,17 @@
             <li
               v-for="f in service.features"
               :key="f"
-              class="text-xs text-gray-500 flex items-center gap-1.5"
+              class="text-sm text-gray-500 flex items-center gap-1.5"
             >
-              <CheckCircle :size="12" class="text-green-500 shrink-0" />
+              <CheckCircle :size="18" class="text-green-500 shrink-0" />
               {{ f }}
             </li>
           </ul>
           <a
             :href="'tel:' + company.phones[0].replace(/-/g, '')"
-            class="flex items-center justify-center gap-1.5 w-full border-2 border-brand-blue text-brand-blue py-2 rounded text-xs font-bold no-underline hover:bg-brand-blue hover:text-white transition-colors"
+            class="flex items-center justify-center gap-1.5 w-full border-2 border-brand-blue text-brand-blue py-2 rounded text-sm font-bold no-underline hover:bg-brand-blue hover:text-white transition-colors"
           >
-            <Phone :size="12" /> I'm Interested!
+            <Phone :size="18" /> I'm Interested!
           </a>
         </div>
       </div>

@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  font-size: 18px;
+}
+
 @theme {
   --color-brand-blue: #1535cc;
   --color-brand-red: #cc0000;
